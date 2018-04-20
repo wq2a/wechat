@@ -1,6 +1,6 @@
 <VirtualHost *:80>
     ServerName wechat.wq2a.com
-    WSGIDaemonProcess http://127.0.0.1:80 python-path=/var/www/wechat/env/lib/python2.7/site-packages
+    WSGIDaemonProcess http://127.0.0.1:80 python-path=/var/www/wechat/modules:/var/www/wechat/env/lib/python2.7/site-packages
     WSGIProcessGroup http://127.0.0.1:80
 
     WSGIScriptAlias / /var/www/wechat/main.py/
